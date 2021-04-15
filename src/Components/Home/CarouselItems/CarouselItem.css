@@ -1,0 +1,159 @@
+.carousel .thumbs {
+    display: none !important;
+}
+.carousel .slide .legend {
+    display: none !important;
+}
+.carousel.carousel-slider .control-arrow {
+    display: none !important;
+}
+.carousel .control-dots .dot {
+    transition: opacity .25s ease-in;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 90%);
+    background: #b73c6d;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 8px;
+}
+.carousel .control-dots {
+    position: absolute;
+    bottom: 35% !important;
+    padding-bottom: 0px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.carousel .carousel-status {
+    display: none;
+}
+
+
+
+
+.banner-content{
+    background: rgba(10, 10, 10, 0.4);
+    background-attachment: fixed;
+    height: 100vh !important;
+    background-size: cover;
+    padding-bottom: 93px;
+}
+.header-text{
+    width: 50%;
+    padding: 40px 10px 5px 80px;
+}
+.header-text h1{
+    font-size: 90px;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    letter-spacing: 6px;
+    line-height: 70px;
+}
+.header-text h2{
+    color: #e7a9b8;
+    font-size: 60px;
+    font-family: sans-serif;
+}
+.banner-section h3{
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: monospace;
+}
+.banner-btn{
+    border: 2px solid #e7a9b8;
+    width: 280px;
+    margin: 25px auto !important;
+    height: 42px;
+    background: #b73c6d;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+.banner-btn:hover{
+    background: transparent;
+    color: white;
+    font-weight: 400;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 550px){
+    .header-text{
+        width: 100%;
+        padding: 40px 10px 5px 0;
+    }
+    .header-text h1{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .header-text h2{
+        font-size: 25px;
+    }
+    .banner-section h3{
+        font-size: 23px;
+    }
+    .banner-btn{
+        width: 65%;
+    }
+    .banner-content {
+        padding-bottom: 50px;
+    }
+    .carousel .control-dots{
+        top: 45%;
+    }
+}
+@media (min-width: 375px){
+    .banner-content{
+        padding-bottom: 76px;
+    }
+}
+@media (min-width: 550px) and (max-width: 768px){
+    .header-text{
+        width: 100%;
+        padding: 40px 10px 5px 0;
+    }
+    .header-text h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .header-text h2{
+        font-size: 45px;
+    }
+    .banner-section h3{
+        font-size: 35px;
+    }
+    .banner-content {
+        padding-bottom: 80px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .header-text{
+        width: 100%;
+        padding: 40px 10px 5px 0;
+    }
+    .header-text h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .header-text h2{
+        font-size: 30px;
+    }
+    .banner-section h3{
+        font-size: 40px;
+    }
+    .banner-content {
+        height: 10vh;
+    }
+}

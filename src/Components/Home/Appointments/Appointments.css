@@ -1,0 +1,54 @@
+.appointment-section{
+    background: url('../../../images/service-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 150vh;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.boy-or-girl{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 150px 0 50px 0;
+    align-items: center;
+    text-align: center;
+}
+.boy-or-girl h6{
+    padding-top: 12px;
+}
+.wrapper{
+    width: 60%;
+    padding: 40px 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.appointment-wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+
+@media (min-width: 320px) and (max-width: 600px){
+    .appointment-section{
+        padding-top: 50px;
+    }
+    .wrapper{
+        width: 90%; 
+    }
+    .appointment-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px){
+    .wrapper{
+        width: 80%;
+    }
+    .appointment-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+

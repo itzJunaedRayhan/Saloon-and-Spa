@@ -1,0 +1,234 @@
+.navbar-wrapper{
+    display: flex !important;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+.brand{
+    margin: 0 10px 10px 15px;
+}
+.searchbar{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 500px;
+    box-sizing: border-box;
+}
+body {
+    color: #000000;
+    font-family: Sans-Serif;
+    background-color: #f6f6f6;
+}
+  
+
+/* Dropdown */
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    background-color: #e45d86;
+    border-radius: 50px 0 0 50px;
+}
+.dd-button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px 30px 10px 15px;
+    background-color: #e45d86;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 50px 0 0 50px;
+}
+.dd-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+}
+.dd-input {
+    display: none;
+}
+.dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+    z-index: 999;
+}
+.dd-input + .dd-menu {
+    display: none;
+} 
+.dd-input:checked + .dd-menu {
+    display: block;
+} 
+.dd-menu li {
+    width: 190px;
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+} 
+.dd-menu li:hover {
+    background-color: #e45d86;
+}
+
+
+
+/*********  search Bar  ***********/
+.search-box{
+    width: 70%;
+    height: 41px;
+    display: flex;
+}
+.search{
+    width: 100%;
+    height: 100% !important;
+    border: 1px solid transparent;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    outline: none;
+    color: black;
+    background-color: #e9ccd1;
+}
+.search-btn{
+    width: 100px;
+    height: 41px;
+    border: 1px solid transparent;
+    text-align: center;
+    color: rgb(56, 54, 54);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: #e9ccd1;
+    border-radius: 0px 50px 50px 0px;
+}
+::placeholder{
+    color: black !important;
+    padding-left: 15px;
+}
+
+
+
+
+
+/********** Menu bar *************/
+.menu-items ul{
+    min-width: 300px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    float: left;
+}
+.menu-items ul li{
+    list-style: none;
+    padding: 0 20px;
+}
+.menu-items ul li a{
+    display: block;
+    color: #fff !important;
+    text-decoration: none;
+}
+.menu-items ul li:hover a{
+    color: #e45d86 !important;
+}
+.menu-items .dropdown{
+    width: 110px;
+    color: white;
+    margin: 0 0px 0 0;
+    padding: 0;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: #e45d86 !important;
+}
+.menu-items .login{
+    display: flex;
+    justify-content: center;
+    background-color: #e45d86;
+    width: 160px;
+    border: 3px solid #fcc2d0;
+    border-radius: 20px;
+    color: white !important;
+    padding: 5px 5px 7px 15px;
+}
+.menu-items .login:hover{
+    text-decoration: none;
+}
+@media (min-width: 320px) and (max-width: 550px){
+    .searchbar{
+        width: 330px;
+    }
+    .dropdown{
+        width: 70px !important;
+    }
+    .search-box{
+        width: 230px;
+        height: 32px;
+    }
+    .search-btn{
+        height: 32px;
+    }
+    .search{
+        padding-bottom: 13px !important;
+    }
+    .dd-button{
+        padding-right: 10px;
+        padding-left: 5px;
+        font-size: 10px;
+    }
+    .navbar-wrapper{
+        padding: 20px 0px;
+    }
+    .dd-button:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 8px solid white;
+    }
+    ::placeholder{
+        padding-left: 5px;
+        font-size: 13px;
+    }
+    .menu-items .dropdown{
+        margin-right: 35px;
+    }
+}
+@media only screen and (max-width: 325px){
+    .searchbar{
+        width: 280px;
+    }
+    .dd-button:after {
+        right: 1px !important;
+    }
+    .menu-items ul {
+        margin-left: -20px;
+        margin-bottom: 10px;
+    }
+    .menu-items .login {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+

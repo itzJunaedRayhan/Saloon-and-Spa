@@ -1,0 +1,8 @@
+.header{
+    height: 70vh;
+    background: url('../../../images/banner-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
