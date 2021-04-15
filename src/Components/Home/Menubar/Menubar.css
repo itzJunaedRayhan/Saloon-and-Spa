@@ -81,9 +81,10 @@ body {
 .dd-menu li:hover {
     background-color: #e45d86;
 }
-
-
-
+.dropdown-menu.show {
+    display: block;
+    z-index: 99999999;
+}
 /*********  search Bar  ***********/
 .search-box{
     width: 70%;
