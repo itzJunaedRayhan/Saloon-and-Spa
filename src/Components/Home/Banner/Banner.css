@@ -7,17 +7,76 @@
     background-size: cover;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    position: relative;
 }
 
-
+.gender-card{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    width: 450px;
+    min-height: 100px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: start !important;
+    z-index: 999999 !important;
+}
+.gender-card .gender,
+.gender-card .appointment{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.gender-card .empty{
+    height: 90px;
+    width: 190px;
+    background-color: white;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+.gender-card h2{
+    font-size: 16px;
+    color: gray;
+    border-bottom: 3px solid gray;
+}
+.gender-card ul{
+    margin: 0px;
+    padding: 0px;
+}
+.gender-card ul li{
+    list-style: none;
+}
+.gender-card a{
+    display: block;
+    text-decoration: none;
+    color: rgb(110, 98, 98);
+}
+.gender-card a:hover{
+    text-decoration: none;
+    color: rgb(73, 66, 66);
+}
 
 
 @media (min-width: 320px) and (max-width: 550px){
     .banner-section{
         max-height: 55vh;
     }
+    .gender-card{
+        display: none;
+    }
 }
-
+@media only screen and (max-width: 770px){
+    .gender-card{
+        width: 270px;
+    }
+    .gender-card .empty{
+        display: none;
+    }
+}
 
 
 
